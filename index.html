@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+      background-color: #f0f5ff; /* Shades of blue */
       color: #333;
     }
     .container {
@@ -16,10 +16,10 @@
       padding: 20px;
     }
     h1 {
-      color: #4d3319;
+      color: #0066cc; /* Dark blue */
     }
     h2 {
-      color: #663300;
+      color: #004080; /* Medium blue */
     }
     p {
       line-height: 1.6;
@@ -31,58 +31,77 @@
       gap: 10px;
     }
     .image-gallery img {
-      max-width: 200px;
+      max-width: 100px; /* Smaller image size for tools */
       height: auto;
+    }
+    .contact-info {
+      margin-top: 20px;
+    }
+    .contact-info a {
+      text-decoration: none;
+      color: #0066cc; /* Dark blue */
     }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>Welcome to NanatheVA's Page</h1>
-      <img src="avatar.jpg" alt="NanatheVA Avatar" width="150">
+      <img src="Hi, I’m Nanret Daspan.png" alt="Nanret Daspan" width="300"> <!-- New image -->
     </header>
     <main>
       <section>
-        <h2>About NanatheVA</h2>
-        <p>Hello, I'm NanatheVA, your dedicated executive virtual assistant. With years of experience in providing top-notch virtual assistance services, I specialize in streamlining tasks, managing schedules, and ensuring efficient communication for executives and professionals.</p>
+        <h2>About Nanret</h2>
+        <p>Nanret, a diligent Virtual Assistant with over 4 years of experience providing remote and freelance executive virtual assistance. Proven track record of optimizing office operations, managing schedules, and delivering exceptional customer service. Highly skilled in virtual communication, task management, and problem-solving. Seeking to leverage expertise in remote administrative assistance to contribute to a dynamic team.</p>
       </section>
       <section>
         <h2>Services Offered</h2>
         <ul>
-          <li>Calendar Management</li>
-          <li>Email Correspondence</li>
-          <li>Document Preparation</li>
-          <li>Travel Arrangements</li>
-          <li>Meeting Coordination</li>
-          <li>And more...</li>
+          <li>Event Management <img src="9.png" alt="Image 9" onclick="focusImage(this)"></li> <!-- Image 9 under Event Management -->
+          <li>File Management <img src="7.png" alt="Image 7" onclick="focusImage(this)"></li> <!-- Image 7 under File Management -->
+          <li>Appointment Setting and Scheduling</li>
+          <li>Project Management</li>
         </ul>
       </section>
       <section>
-        <h2>Image Gallery</h2>
-        <div class="image-gallery">
-          <img src="1.png" alt="Image 1">
-          <img src="2.png" alt="Image 2">
-          <img src="3.png" alt="Image 3">
-          <img src="4.png" alt="Image 4">
-          <img src="5.png" alt="Image 5">
-          <img src="6.png" alt="Image 6">
-          <img src="7.png" alt="Image 7">
-          <img src="8.png" alt="Image 8">
-          <img src="9.png" alt="Image 9">
-          <img src="10.png" alt="Image 10">
-          <img src="11.png" alt="Image 11">
-        </div>
+        <h2>Qualifications and Work Experience</h2>
+        <img src="3.png" alt="Qualifications Image" width="200">
+        <img src="6.png" alt="Work Experience Image" width="200">
       </section>
       <section>
-        <h2>Contact NanatheVA</h2>
-        <p>If you're ready to take your productivity to the next level, don't hesitate to get in touch!</p>
-        <p>Email: daspanvea@gmail.com</p>
+        <h2>Tools</h2>
+        <div class="image-gallery">
+          <img src="airtable.png" alt="Airtable">
+          <img src="asana.png" alt="Asana">
+          <img src="trello.png" alt="Trello">
+          <img src="slack.png" alt="Slack">
+          <img src="canva.png" alt="Canva">
+          <img src="chatgpt.png" alt="ChatGPT">
+          <img src="dropbox.png" alt="Dropbox">
+          <img src="google workspace.jpg" alt="Google Workspace">
+          <img src="instagram.png" alt="Instagram">
+          <img src="linkdin.png" alt="LinkedIn">
+          <img src="ms office.png" alt="MS Office">
+          <img src="skype.png" alt="Skype">
+          <img src="zoom.png" alt="Zoom">
+        </div>
+      </section>
+      <section class="contact-info">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:daspanvea@gmail.com">daspanvea@gmail.com</a></p>
+        <p>Twitter: <a href="https://twitter.com/NanretDaspan">@NanretDaspan</a></p>
       </section>
     </main>
     <footer>
       <p>&copy; 2024 NanatheVA - Executive Virtual Assistance</p>
     </footer>
   </div>
+
+  <script>
+    function focusImage(image) {
+      // Display the image in a larger size or perform any other action when clicked
+      alert("Image clicked! Displaying larger size...");
+      // You can replace the alert with code to display the image in a modal or any other desired behavior
+    }
+  </script>
 </body>
 </html>
