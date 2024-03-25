@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,15 +6,20 @@
   <title>NanatheVA - Executive Virtual Assistance</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #a4b4bf; /* Changed background color */
+      font-family: Inter, FA;
+      background-color: #c7a47b; /* Changed background color */
       color: #333;
       margin: 0;
       padding: 0;
+      display: flex;
     }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
+    .left-panel {
+      width: 200px; /* Width of the left panel */
+      background-color: #f5f5f5; /* Light grey background color */
+      padding: 20px;
+    }
+    .right-panel {
+      flex: 1; /* Take remaining space */
       padding: 20px;
     }
     h1 {
@@ -26,64 +31,37 @@
     p {
       line-height: 1.6;
     }
-    .image-gallery, .client-reviews, .tools-section {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-    }
-    .image-gallery img {
-      max-width: 300px; /* Increased size for portfolio */
-      height: auto;
-      cursor: pointer; /* Add pointer cursor for clickable images */
-    }
-    .client-reviews img {
-      max-width: 200px; /* Adjusted size for client reviews */
-      height: auto;
-      cursor: pointer; /* Add pointer cursor for clickable images */
-    }
-    .contact-info {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-    }
-    .contact-info a {
-      margin: 0 10px;
+    /* Styling for links in the left panel */
+    .left-panel a {
+      display: block;
       text-decoration: none;
-      color: #0066cc; /* Dark blue */
+      color: #333;
+      margin-bottom: 10px;
+      padding: 5px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
     }
-    .tools-section img {
-      max-width: 1cm; /* Smallest size for tools */
-      height: 1cm;
-    }
-    .services-section {
-      background-color: #a4b4bf; /* White background for services section */
-      padding: 20px;
-      margin-top: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow */
-    }
-    .service-columns {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      margin-top: 20px;
-    }
-    .service-column {
-      flex: 1;
-    }
-    .service-item {
-      margin-bottom: 20px;
+    /* Change background color of links on hover */
+    .left-panel a:hover {
+      background-color: #ddd;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="Hi, I’m Nanret Daspan.png" alt="Nanret Daspan" width="500"> <!-- Updated width -->
-    </header>
-    <main>
-      <section>
+  <div class="left-panel">
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#reviews">Client Reviews</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="right-panel">
+    <div id="about">
         <h2>About Nanret</h2>
         <p>Nanret, a diligent Virtual Assistant with over 4 years of experience providing remote and freelance executive virtual assistance. Proven track record of optimizing office operations, managing schedules, and delivering exceptional customer service. Highly skilled in virtual communication, task management, and problem-solving. Seeking to leverage expertise in remote administrative assistance to contribute to a dynamic team.</p>
       </section>
