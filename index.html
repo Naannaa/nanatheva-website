@@ -41,12 +41,19 @@
       text-decoration: none;
       color: #0066cc; /* Dark blue */
     }
+    .portfolio {
+      margin-top: 20px;
+    }
+    .portfolio img {
+      max-width: 200px;
+      height: auto;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <img src="Hi, I’m Nanret Daspan.png" alt="Nanret Daspan" width="300"> <!-- New image -->
+      <img src="Hi, I’m Nanret Daspan.png" alt="Nanret Daspan" width="500"> <!-- Updated width -->
     </header>
     <main>
       <section>
@@ -56,34 +63,24 @@
       <section>
         <h2>Services Offered</h2>
         <ul>
-          <li>Event Management <img src="9.png" alt="Image 9" onclick="focusImage(this)"></li> <!-- Image 9 under Event Management -->
-          <li>File Management <img src="7.png" alt="Image 7" onclick="focusImage(this)"></li> <!-- Image 7 under File Management -->
-          <li>Appointment Setting and Scheduling</li>
+          <li>Calendar Management</li>
+          <li>File/Document Management</li>
           <li>Project Management</li>
+          <li>Appointment Setting and Scheduling</li>
+          <li>Travel Arrangement</li>
+          <li>Email Management</li>
+          <li>Meeting Coordination</li>
+          <li>And more...</li>
         </ul>
       </section>
-      <section>
-        <h2>Qualifications and Work Experience</h2>
-        <img src="3.png" alt="Qualifications Image" width="200">
-        <img src="6.png" alt="Work Experience Image" width="200">
-      </section>
-      <section>
-        <h2>Tools</h2>
-        <div class="image-gallery">
-          <img src="airtable.png" alt="Airtable">
-          <img src="asana.png" alt="Asana">
-          <img src="trello.png" alt="Trello">
-          <img src="slack.png" alt="Slack">
-          <img src="canva.png" alt="Canva">
-          <img src="chatgpt.png" alt="ChatGPT">
-          <img src="dropbox.png" alt="Dropbox">
-          <img src="google workspace.jpg" alt="Google Workspace">
-          <img src="instagram.png" alt="Instagram">
-          <img src="linkdin.png" alt="LinkedIn">
-          <img src="ms office.png" alt="MS Office">
-          <img src="skype.png" alt="Skype">
-          <img src="zoom.png" alt="Zoom">
-        </div>
+      <section class="portfolio">
+        <h2>Portfolio</h2>
+        <img src="3.png" alt="Portfolio Image 1">
+        <img src="6.png" alt="Portfolio Image 2">
+        <img src="7.png" alt="Portfolio Image 3">
+        <img src="8.png" alt="Portfolio Image 4">
+        <img src="9.png" alt="Portfolio Image 5">
+        <img src="10.png" alt="Portfolio Image 6">
       </section>
       <section class="contact-info">
         <h2>Contact Me</h2>
@@ -95,13 +92,5 @@
       <p>&copy; 2024 NanatheVA - Executive Virtual Assistance</p>
     </footer>
   </div>
-
-  <script>
-    function focusImage(image) {
-      // Display the image in a larger size or perform any other action when clicked
-      alert("Image clicked! Displaying larger size...");
-      // You can replace the alert with code to display the image in a modal or any other desired behavior
-    }
-  </script>
 </body>
 </html>
