@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f0f5ff; /* Shades of blue */
+      background-color: #c7a47b; /* Changed background color */
       color: #333;
       margin: 0;
       padding: 0;
@@ -33,12 +33,12 @@
       gap: 10px;
     }
     .image-gallery img {
-      max-width: 250px; /* Increased size for portfolio */
+      max-width: 300px; /* Increased size for portfolio */
       height: auto;
       cursor: pointer; /* Add pointer cursor for clickable images */
     }
     .client-reviews img {
-      max-width: 150px; /* Adjusted size for client reviews */
+      max-width: 200px; /* Adjusted size for client reviews */
       height: auto;
       cursor: pointer; /* Add pointer cursor for clickable images */
     }
@@ -57,21 +57,23 @@
       height: 1cm;
     }
     .services-section {
-      background-image: url('Green Elegant Clients Review Instagram Story.png'); /* Background image */
-      background-size: cover;
-      background-position: center;
+      background-color: #fff; /* White background for services section */
       padding: 20px;
       margin-top: 20px;
-    }
-    .service-item {
-      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
       border-radius: 10px;
-      padding: 10px;
-      margin-bottom: 20px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow */
     }
-    .service-item h3 {
-      margin-top: 0;
+    .service-columns {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .service-column {
+      flex: 1;
+    }
+    .service-item {
+      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -86,48 +88,54 @@
         <p>Nanret, a diligent Virtual Assistant with over 4 years of experience providing remote and freelance executive virtual assistance. Proven track record of optimizing office operations, managing schedules, and delivering exceptional customer service. Highly skilled in virtual communication, task management, and problem-solving. Seeking to leverage expertise in remote administrative assistance to contribute to a dynamic team.</p>
       </section>
       <section class="services-section">
-        <h2 style="display: none;">Services We Offer</h2> <!-- Hide the heading -->
-        <div class="service-item">
-          <h3>Calendar Management</h3>
-        </div>
-        <div class="service-item">
-          <h3>File/Document Management</h3>
-        </div>
-        <div class="service-item">
-          <h3>Project Management</h3>
-        </div>
-        <div class="service-item">
-          <h3>Appointment Setting and Scheduling</h3>
-        </div>
-        <div class="service-item">
-          <h3>Travel Arrangement</h3>
-        </div>
-        <div class="service-item">
-          <h3>Email Management</h3>
-        </div>
-        <div class="service-item">
-          <h3>Meeting Coordination</h3>
-        </div>
-        <div class="service-item">
-          <h3>Bookkeeping</h3>
-        </div>
-        <div class="service-item">
-          <h3>Managing Pinterest Account</h3>
-        </div>
-        <div class="service-item">
-          <h3>Managing LinkedIn Accounts</h3>
-        </div>
-        <div class="service-item">
-          <h3>Job Posting</h3>
-        </div>
-        <div class="service-item">
-          <h3>Proofreading and Editing</h3>
-        </div>
-        <div class="service-item">
-          <h3>Video and Audio Transcription</h3>
-        </div>
-        <div class="service-item">
-          <h3>Live Chat and Social Media Customer Support</h3>
+        <h2>Services We Offer</h2> <!-- Added heading -->
+        <div class="service-columns">
+          <div class="service-column">
+            <div class="service-item">
+              <h3>Calendar Management</h3>
+            </div>
+            <div class="service-item">
+              <h3>File/Document Management</h3>
+            </div>
+            <div class="service-item">
+              <h3>Project Management</h3>
+            </div>
+            <div class="service-item">
+              <h3>Appointment Setting and Scheduling</h3>
+            </div>
+            <div class="service-item">
+              <h3>Travel Arrangement</h3>
+            </div>
+            <div class="service-item">
+              <h3>Email Management</h3>
+            </div>
+            <div class="service-item">
+              <h3>Meeting Coordination</h3>
+            </div>
+          </div>
+          <div class="service-column">
+            <div class="service-item">
+              <h3>Bookkeeping</h3>
+            </div>
+            <div class="service-item">
+              <h3>Managing Pinterest Account</h3>
+            </div>
+            <div class="service-item">
+              <h3>Managing LinkedIn Accounts</h3>
+            </div>
+            <div class="service-item">
+              <h3>Job Posting</h3>
+            </div>
+            <div class="service-item">
+              <h3>Proofreading and Editing</h3>
+            </div>
+            <div class="service-item">
+              <h3>Video and Audio Transcription</h3>
+            </div>
+            <div class="service-item">
+              <h3>Live Chat and Social Media Customer Support</h3>
+            </div>
+          </div>
         </div>
       </section>
       <section class="portfolio">
@@ -156,12 +164,34 @@
           <img src="10.jpg" alt="Client Review 10" onclick="focusImage(this)">
         </div>
       </section>
-      <section class="contact-info">
-        <h2>Contact Us</h2>
-       <a href="mailto:daspanvea@gmail.com"><img src="email_icon.png" alt="Email"></a>
-        <a href="https://twitter.com/NanretDaspan"><img src="twitter_icon.png" alt="Twitter"></a>
+      <section class="tools-section">
+        <h2>Tools</h2>
+        <div class="image-gallery">
+<img src="airtable.png" alt="Airtable">
+          <img src="asana.png" alt="Asana">
+          <img src="trello.png" alt="Trello">
+          <img src="slack.png" alt="Slack">
+          <img src="canva.png" alt="Canva">
+          <img src="chatgpt.png" alt="ChatGPT">
+          <img src="dropbox.png" alt="Dropbox">
+          <img src="google workspace.jpg" alt="Google Workspace">
+          <img src="instagram.png" alt="Instagram">
+          <img src="linkdin.png" alt="LinkedIn">
+          <img src="ms office.png" alt="MS Office">
+          <img src="skype.png" alt="Skype">
+          <img src="zoom.png" alt="Zoom">
+        </div>
       </section>
     </main>
+    <section class="contact-info">
+      <h2>Contact Us</h2>
+     <a href="mailto:daspanvea@gmail.com"><img src="email_icon.png" alt="Email"></a>
+     <a href="https://twitter.com/NanretDaspan"><img src="twitter_icon.png" alt="Twitter"></a>
+     <a href="https://api.whatsapp.com/send?phone=+2348132807631">WhatsApp</a>
+    </section>
   </div>
 </body>
 </html>
+
+
+      
