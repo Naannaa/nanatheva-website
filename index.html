@@ -44,20 +44,25 @@
     .left-panel a:hover {
       background-color: #ddd;
     }
-     .image-gallery img {
-      border-radius: 5px;
-      margin-bottom: 10px;
-    }
-    /* Adjust size of portfolio and client review images */
-    .image-gallery.portfolio img,
-    .image-gallery.reviews img {
-      max-width: 200px;
-      height: auto;
-    }
-    /* Adjust size of tools images */
     .image-gallery.tools img {
       width: 2cm;
       height: 2cm;
+    }
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Divide into two columns */
+      gap: 20px; /* Gap between items */
+    }
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .image-gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
     }
   </style>
 </head>
@@ -133,34 +138,34 @@
       <section class="portfolio">
         <h2>Portfolio</h2>
         <div class="image-gallery">
-          <img src="3.png" alt="Portfolio Image 1" onclick="focusImage(this)">
-          <img src="6.png" alt="Portfolio Image 2" onclick="focusImage(this)">
-          <img src="7.png" alt="Portfolio Image 3" onclick="focusImage(this)">
-          <img src="8.png" alt="Portfolio Image 4" onclick="focusImage(this)">
-          <img src="9.png" alt="Portfolio Image 5" onclick="focusImage(this)">
-          <img src="10.png" alt="Portfolio Image 6" onclick="focusImage(this)">
+          <img src="3.png" alt="Portfolio Image 1" style="width: 200px;"> 
+          <img src="6.png" alt="Portfolio Image 2" style="width: 200px;">
+          <img src="7.png" alt="Portfolio Image 3" style="width: 200px;">
+          <img src="8.png" alt="Portfolio Image 4" style="width: 200px;">
+          <img src="9.png" alt="Portfolio Image 5" style="width: 200px;">
+          <img src="10.png" alt="Portfolio Image 6" style="width: 200px;">
         </div>
       </section>
       <section class="client-reviews">
         <h2>Client Reviews</h2>
         <div class="image-gallery">
-          <img src="1.jpg" alt="Client Review 1" onclick="focusImage(this)">
-          <img src="2.jpg" alt="Client Review 2" onclick="focusImage(this)">
-          <img src="3.jpg" alt="Client Review 3" onclick="focusImage(this)">
-          <img src="4.jpg" alt="Client Review 4" onclick="focusImage(this)">
-          <img src="5.jpg" alt="Client Review 5" onclick="focusImage(this)">
-          <img src="6.jpg" alt="Client Review 6" onclick="focusImage(this)">
-          <img src="7.jpg" alt="Client Review 7" onclick="focusImage(this)">
-          <img src="8.jpg" alt="Client Review 8" onclick="focusImage(this)">
-          <img src="9.jpg" alt="Client Review 9" onclick="focusImage(this)">
-          <img src="10.jpg" alt="Client Review 10" onclick="focusImage(this)">
+          <img src="1.jpg" alt="Client Review 1" style="width: 200px;">
+          <img src="2.jpg" alt="Client Review 2" style="width: 200px;">
+          <img src="3.jpg" alt="Client Review 3" style="width: 200px;">
+          <img src="4.jpg" alt="Client Review 4" style="width: 200px;">
+          <img src="5.jpg" alt="Client Review 5" style="width: 200px;">
+          <img src="6.jpg" alt="Client Review 6" style="width: 200px;">
+          <img src="7.jpg" alt="Client Review 7" style="width: 200px;">
+          <img src="8.jpg" alt="Client Review 8" style="width: 200px;">
+          <img src="9.jpg" alt="Client Review 9" style="width: 200px;">
+          <img src="10.jpg" alt="Client Review 10" style="width: 200px;">
         </div>
       </section>
       <section class="tools-section">
         <h2>Tools</h2>
         <div class="image-gallery">
 <img src="airtable.png" alt="Airtable">
-          <img src="asana.png" alt="Asana">
+          <img src="asana.png" alt="Asana" style="width: 200px;">
           <img src="trello.png" alt="Trello">
           <img src="slack.png" alt="Slack">
           <img src="canva.png" alt="Canva">
