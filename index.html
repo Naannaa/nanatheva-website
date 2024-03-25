@@ -24,15 +24,16 @@
     p {
       line-height: 1.6;
     }
-    .image-gallery {
+    .image-gallery, .client-reviews, .tools-section {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
     }
-    .image-gallery img {
-      max-width: 100px; /* Smaller image size for tools */
+    .image-gallery img, .client-reviews img, .tools-section img {
+      max-width: 300px; /* Adjusted size for portfolio and client reviews */
       height: auto;
+      cursor: pointer; /* Add pointer cursor for clickable images */
     }
     .contact-info {
       margin-top: 20px;
@@ -41,19 +42,12 @@
       text-decoration: none;
       color: #0066cc; /* Dark blue */
     }
-    .portfolio {
-      margin-top: 20px;
-    }
-    .portfolio img {
-      max-width: 200px;
-      height: auto;
-    }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <img src="Hi, I’m Nanret Daspan.png" alt="Nanret Daspan" width="500"> <!-- Updated width -->
+      <img src="Hi, I’m Nanret Daspan.png" alt="Nanret Daspan" width="600"> <!-- Updated width -->
     </header>
     <main>
       <section>
@@ -61,7 +55,7 @@
         <p>Nanret, a diligent Virtual Assistant with over 4 years of experience providing remote and freelance executive virtual assistance. Proven track record of optimizing office operations, managing schedules, and delivering exceptional customer service. Highly skilled in virtual communication, task management, and problem-solving. Seeking to leverage expertise in remote administrative assistance to contribute to a dynamic team.</p>
       </section>
       <section>
-        <h2>Services Offered</h2>
+        <h2>Services We Offer</h2> <!-- Updated section title -->
         <ul>
           <li>Calendar Management</li>
           <li>File/Document Management</li>
@@ -70,17 +64,58 @@
           <li>Travel Arrangement</li>
           <li>Email Management</li>
           <li>Meeting Coordination</li>
-          <li>And more...</li>
+          <li>Bookkeeping</li> <!-- New service -->
+          <li>Managing Pinterest Account</li> <!-- New service -->
+          <li>Managing LinkedIn Accounts</li> <!-- New service -->
+          <li>Job Posting</li> <!-- New service -->
+          <li>Proofreading and Editing</li> <!-- New service -->
+          <li>Video and Audio Transcription</li> <!-- New service -->
+          <li>Live Chat and Social Media Customer Support</li> <!-- New service -->
         </ul>
       </section>
       <section class="portfolio">
         <h2>Portfolio</h2>
-        <img src="3.png" alt="Portfolio Image 1">
-        <img src="6.png" alt="Portfolio Image 2">
-        <img src="7.png" alt="Portfolio Image 3">
-        <img src="8.png" alt="Portfolio Image 4">
-        <img src="9.png" alt="Portfolio Image 5">
-        <img src="10.png" alt="Portfolio Image 6">
+        <div class="image-gallery">
+          <img src="3.png" alt="Portfolio Image 1" onclick="focusImage(this)">
+          <img src="6.png" alt="Portfolio Image 2" onclick="focusImage(this)">
+          <img src="7.png" alt="Portfolio Image 3" onclick="focusImage(this)">
+          <img src="8.png" alt="Portfolio Image 4" onclick="focusImage(this)">
+          <img src="9.png" alt="Portfolio Image 5" onclick="focusImage(this)">
+          <img src="10.png" alt="Portfolio Image 6" onclick="focusImage(this)">
+        </div>
+      </section>
+      <section class="client-reviews">
+        <h2>Client Reviews</h2>
+        <div class="image-gallery">
+          <img src="1.jpg" alt="Client Review Image 1" onclick="focusImage(this)">
+          <img src="2.jpg" alt="Client Review Image 2" onclick="focusImage(this)">
+          <img src="3.jpg" alt="Client Review Image 3" onclick="focusImage(this)">
+          <img src="4.jpg" alt="Client Review Image 4" onclick="focusImage(this)">
+          <img src="5.jpg" alt="Client Review Image 5" onclick="focusImage(this)">
+          <img src="6.jpg" alt="Client Review Image 6" onclick="focusImage(this)">
+          <img src="7.jpg" alt="Client Review Image 7" onclick="focusImage(this)">
+          <img src="8.jpg" alt="Client Review Image 8" onclick="focusImage(this)">
+          <img src="9.jpg" alt="Client Review Image 9" onclick="focusImage(this)">
+          <img src="10.jpg" alt="Client Review Image 10" onclick="focusImage(this)">
+        </div>
+      </section>
+      <section class="tools-section">
+        <h2>Tools Used</h2>
+        <div class="image-gallery">
+          <img src="airtable.png" alt="Airtable">
+          <img src="asana.png" alt="Asana">
+          <img src="trello.png" alt="Trello">
+          <img src="slack.png" alt="Slack">
+          <img src="canva.png" alt="Canva">
+          <img src="chatgpt.png" alt="ChatGPT">
+          <img src="dropbox.png" alt="Dropbox">
+          <img src="google workspace.jpg" alt="Google Workspace">
+          <img src="instagram.png" alt="Instagram">
+          <img src="linkdin.png" alt="LinkedIn">
+          <img src="ms office.png" alt="MS Office">
+          <img src="skype.png" alt="Skype">
+          <img src="zoom.png" alt="Zoom">
+        </div>
       </section>
       <section class="contact-info">
         <h2>Contact Me</h2>
@@ -92,5 +127,13 @@
       <p>&copy; 2024 NanatheVA - Executive Virtual Assistance</p>
     </footer>
   </div>
+
+  <script>
+    function focusImage(image) {
+      // Display the image in a larger size or perform any other action when clicked
+      alert("Image clicked! Displaying larger size...");
+      // You can replace the alert with code to display the image in a modal or any other desired behavior
+    }
+  </script>
 </body>
 </html>
