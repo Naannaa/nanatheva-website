@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,6 +9,8 @@
       font-family: Arial, sans-serif;
       background-color: #f0f5ff; /* Shades of blue */
       color: #333;
+      margin: 0;
+      padding: 0;
     }
     .container {
       max-width: 800px;
@@ -30,21 +32,46 @@
       justify-content: center;
       gap: 10px;
     }
-    .image-gallery img, .client-reviews img {
-      max-width: 200px; /* Adjusted size for portfolio and client reviews */
+    .image-gallery img {
+      max-width: 250px; /* Increased size for portfolio */
+      height: auto;
+      cursor: pointer; /* Add pointer cursor for clickable images */
+    }
+    .client-reviews img {
+      max-width: 150px; /* Adjusted size for client reviews */
       height: auto;
       cursor: pointer; /* Add pointer cursor for clickable images */
     }
     .contact-info {
       margin-top: 20px;
+      display: flex;
+      justify-content: center;
     }
     .contact-info a {
+      margin: 0 10px;
       text-decoration: none;
       color: #0066cc; /* Dark blue */
     }
     .tools-section img {
-      max-width: 2cm; /* Smallest size for tools */
-      height: 2cm;
+      max-width: 1cm; /* Smallest size for tools */
+      height: 1cm;
+    }
+    .services-section {
+      background-image: url('Green Elegant Clients Review Instagram Story.png'); /* Background image */
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .service-item {
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow */
+    }
+    .service-item h3 {
+      margin-top: 0;
     }
   </style>
 </head>
@@ -58,24 +85,50 @@
         <h2>About Nanret</h2>
         <p>Nanret, a diligent Virtual Assistant with over 4 years of experience providing remote and freelance executive virtual assistance. Proven track record of optimizing office operations, managing schedules, and delivering exceptional customer service. Highly skilled in virtual communication, task management, and problem-solving. Seeking to leverage expertise in remote administrative assistance to contribute to a dynamic team.</p>
       </section>
-      <section>
-        <h2>Services We Offer</h2> <!-- Updated section title -->
-        <ul>
-          <li>Calendar Management</li>
-          <li>File/Document Management</li>
-          <li>Project Management</li>
-          <li>Appointment Setting and Scheduling</li>
-          <li>Travel Arrangement</li>
-          <li>Email Management</li>
-          <li>Meeting Coordination</li>
-          <li>Bookkeeping</li> <!-- New service -->
-          <li>Managing Pinterest Account</li> <!-- New service -->
-          <li>Managing LinkedIn Accounts</li> <!-- New service -->
-          <li>Job Posting</li> <!-- New service -->
-          <li>Proofreading and Editing</li> <!-- New service -->
-          <li>Video and Audio Transcription</li> <!-- New service -->
-          <li>Live Chat and Social Media Customer Support</li> <!-- New service -->
-        </ul>
+      <section class="services-section">
+        <h2 style="display: none;">Services We Offer</h2> <!-- Hide the heading -->
+        <div class="service-item">
+          <h3>Calendar Management</h3>
+        </div>
+        <div class="service-item">
+          <h3>File/Document Management</h3>
+        </div>
+        <div class="service-item">
+          <h3>Project Management</h3>
+        </div>
+        <div class="service-item">
+          <h3>Appointment Setting and Scheduling</h3>
+        </div>
+        <div class="service-item">
+          <h3>Travel Arrangement</h3>
+        </div>
+        <div class="service-item">
+          <h3>Email Management</h3>
+        </div>
+        <div class="service-item">
+          <h3>Meeting Coordination</h3>
+        </div>
+        <div class="service-item">
+          <h3>Bookkeeping</h3>
+        </div>
+        <div class="service-item">
+          <h3>Managing Pinterest Account</h3>
+        </div>
+        <div class="service-item">
+          <h3>Managing LinkedIn Accounts</h3>
+        </div>
+        <div class="service-item">
+          <h3>Job Posting</h3>
+        </div>
+        <div class="service-item">
+          <h3>Proofreading and Editing</h3>
+        </div>
+        <div class="service-item">
+          <h3>Video and Audio Transcription</h3>
+        </div>
+        <div class="service-item">
+          <h3>Live Chat and Social Media Customer Support</h3>
+        </div>
       </section>
       <section class="portfolio">
         <h2>Portfolio</h2>
@@ -91,47 +144,24 @@
       <section class="client-reviews">
         <h2>Client Reviews</h2>
         <div class="image-gallery">
-          <img src="1.jpg" alt="Client Review Image 1" onclick="focusImage(this)">
-          <img src="2.jpg" alt="Client Review Image 2" onclick="focusImage(this)">
-          <img src="3.jpg" alt="Client Review Image 3" onclick="focusImage(this)">
-          <img src="4.jpg" alt="Client Review Image 4" onclick="focusImage(this)">
-          <img src="5.jpg" alt="Client Review Image 5" onclick="focusImage(this)">
-          <img src="6.jpg" alt="Client Review Image 6" onclick="focusImage(this)">
-          <img src="7.jpg" alt="Client Review Image 7" onclick="focusImage(this)">
-          <img src="8.jpg" alt="Client Review Image 8" onclick="focusImage(this)">
-          <img src="9.jpg" alt="Client Review Image 9" onclick="focusImage(this)">
-          <img src="10.jpg" alt="Client Review Image 10" onclick="focusImage(this)">
-        </div>
-      </section>
-      <section class="tools-section">
-        <h2>Tools Used</h2>
-        <div class="image-gallery">
-          <img src="airtable.png" alt="Airtable">
-          <img src="asana.png" alt="Asana">
-          <img src="trello.png" alt="Trello">
-          <img src="slack.png" alt="Slack">
-          <img src="canva.png" alt="Canva">
-          <img src="chatgpt.png" alt="ChatGPT">
-          <img src="dropbox.png" alt="Dropbox">
-          <img src="google workspace.jpg" alt="Google Workspace">
-          <img src="instagram.png" alt="Instagram">
-          <img src="linkdin.png" alt="LinkedIn">
-          <img src="ms office.png" alt="MS Office">
-          <img src="skype.png" alt="Skype">
-          <img src="zoom.png" alt="Zoom">
+          <img src="1.jpg" alt="Client Review 1" onclick="focusImage(this)">
+          <img src="2.jpg" alt="Client Review 2" onclick="focusImage(this)">
+          <img src="3.jpg" alt="Client Review 3" onclick="focusImage(this)">
+          <img src="4.jpg" alt="Client Review 4" onclick="focusImage(this)">
+          <img src="5.jpg" alt="Client Review 5" onclick="focusImage(this)">
+          <img src="6.jpg" alt="Client Review 6" onclick="focusImage(this)">
+          <img src="7.jpg" alt="Client Review 7" onclick="focusImage(this)">
+          <img src="8.jpg" alt="Client Review 8" onclick="focusImage(this)">
+          <img src="9.jpg" alt="Client Review 9" onclick="focusImage(this)">
+          <img src="10.jpg" alt="Client Review 10" onclick="focusImage(this)">
         </div>
       </section>
       <section class="contact-info">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:daspanvea@gmail.com">daspanvea@gmail.com</a></p>
-        <p>Twitter: <a href="https://twitter.com/NanretDaspan">@NanretDaspan</a></p>
+        <h2>Contact Us</h2>
+       <a href="mailto:daspanvea@gmail.com"><img src="email_icon.png" alt="Email"></a>
+        <a href="https://twitter.com/NanretDaspan"><img src="twitter_icon.png" alt="Twitter"></a>
       </section>
     </main>
-    <footer>
-      <p>&copy; 2024 NanatheVA - Executive Virtual Assistance</p>
-    </footer>
   </div>
-
-  <script>
-    function focusImage(image) {
-      // Display the image in a larger size or perform any other action
+</body>
+</html>
