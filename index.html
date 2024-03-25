@@ -30,8 +30,8 @@
       justify-content: center;
       gap: 10px;
     }
-    .image-gallery img, .client-reviews img, .tools-section img {
-      max-width: 300px; /* Adjusted size for portfolio and client reviews */
+    .image-gallery img, .client-reviews img {
+      max-width: 200px; /* Adjusted size for portfolio and client reviews */
       height: auto;
       cursor: pointer; /* Add pointer cursor for clickable images */
     }
@@ -42,12 +42,16 @@
       text-decoration: none;
       color: #0066cc; /* Dark blue */
     }
+    .tools-section img {
+      max-width: 10px; /* Smallest size for tools */
+      height: auto;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <img src="Hi, I’m Nanret Daspan.png" alt="Nanret Daspan" width="600"> <!-- Updated width -->
+      <img src="Hi, I’m Nanret Daspan.png" alt="Nanret Daspan" width="500"> <!-- Updated width -->
     </header>
     <main>
       <section>
@@ -130,10 +134,4 @@
 
   <script>
     function focusImage(image) {
-      // Display the image in a larger size or perform any other action when clicked
-      alert("Image clicked! Displaying larger size...");
-      // You can replace the alert with code to display the image in a modal or any other desired behavior
-    }
-  </script>
-</body>
-</html>
+      // Display the image in a larger size or perform any other action
