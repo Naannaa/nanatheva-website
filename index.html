@@ -83,6 +83,11 @@
       margin-right: 10px;
       float: left;
     }
+    .testimonial-flag {
+      width: 20px;
+      height: auto;
+      margin-right: 5px;
+    }
     .services {
       padding: 50px 20px;
       text-align: center;
@@ -113,6 +118,18 @@
       text-align: center;
       padding: 20px;
     }
+    .portfolio {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .portfolio-item {
+      display: inline-block;
+      margin: 0 15px;
+    }
+    .portfolio-item img {
+      width: 200px; /* Adjusted image size */
+      height: auto;
+    }
   </style>
 </head>
 <body>
@@ -128,8 +145,10 @@
       </ul>
     </nav>
     <div>
-      <p>Phone: 123-456-7890 | Email: info@nanatheva.com</p>
-      <a href="#" class="cta-button">Get Started</a>
+      <p>Email: daspanvea@gmail.com</p>
+      <a href="https://twitter.com/NanretDaspan" target="_blank"><img src="twitter_icon.png" alt="Twitter" style="width: 20px; height: auto;"></a>
+      <a href="https://www.facebook.com/nanretdaspan" target="_blank"><img src="facebook_icon.png" alt="Facebook" style="width: 20px; height: auto; margin-left: 10px;"></a>
+      <a href="tel:+2348132807631"><img src="whatsapp_icon.png" alt="WhatsApp" style="width: 20px; height: auto; margin-left: 10px;"></a>
     </div>
   </header>
   <section class="hero">
@@ -155,23 +174,38 @@
       <p>We offer personalized solutions tailored to meet your specific business requirements.</p>
     </div>
   </section>
-  <section class="testimonials">
+  <section class="testimonials" id="testimonials">
     <h2>Client Testimonials</h2>
     <div class="testimonial">
       <img src="testimonial1.jpg" alt="Client 1">
-      <p>"I've been using NanatheVA's services for over a year now, and I'm extremely satisfied with the results. Highly recommended!"</p>
-      <p>- John Doe</p>
+      <img src="uk_flag.png" alt="UK Flag" class="testimonial-flag">
+      <p>""Nanret is an absolute gem! She goes above and beyond to ensure tasks are completed efficiently and accurately. Her communication skills are exceptional, and she's always proactive in finding solutions. Highly recommend her services!"</p>
+      <p>- John Webster, London</p>
     </div>
     <div class="testimonial">
       <img src="testimonial2.jpg" alt="Client 2">
+      <img src="us_flag.png" alt="US Flag" class="testimonial-flag">
       <p>"NanatheVA has helped streamline our business operations effectively. Great service and excellent support!"</p>
-      <p>- Jane Smith</p>
+      <p>- Jane Smith, US</p>
     </div>
     <div class="testimonial">
       <img src="testimonial3.jpg" alt="Client 3">
-      <p>"Working with NanatheVA has been a game-changer for our company. Professionalism at its best!"</p>
-      <p>- David Johnson</p>
+      <img src="south_korea_flag.png" alt="South Korea Flag" class="testimonial-flag">
+      <p>"Nanret is a lifesaver! Her professionalism and dedication to her work are truly commendable. She handles all tasks promptly and with precision. Couldn't ask for a better virtual assistant. Highly satisfied!"</p>
+      <p>- David Choi, South Korea</p>
     </div>
+    <div class="testimonial">
+      <img src="testimonial4.jpg" alt="Client 4">
+      <img src="melbourne_flag.png" alt="Melbourne Flag" class="testimonial-flag">
+      <p>"Choosing Nanret as my virtual assistant was one of the best decisions I've made for my business. She's responsive, efficient, and incredibly skilled at what she does. With her support, I've been able to focus on growing my business with peace of mind. Thank you, Nanret, for your exceptional service!"</p>
+      <p>- Emily Brown, Melbourne</p>
+    </div>
+     <div class="testimonial">
+      <img src="testimonial4.jpg" alt="Client 4">
+      <img src="melbourne_flag.png" alt="Singapore Flag" class="testimonial-flag">
+      <p>"I can't imagine managing my workload without Nanret's assistance. She's reliable, efficient, and always goes the extra mile to ensure tasks are completed to perfection. Working with her has been a game-changer for my productivity. Thank you, Nanret!"</p>
+      <p>- Sofia Chia, Singapore</p>
+    <!-- Add more testimonials as needed -->
   </section>
   <section class="services" id="services">
     <h2>Our Services</h2>
@@ -187,7 +221,64 @@
       <h3>Document Handling</h3>
       <p>Stay organized and access your important documents anytime, anywhere with our document handling services.</p>
     </div>
+    <div class="service-item">
+      <h3>Project Management</h3>
+      <p>Stay on top of your projects and ensure timely delivery with our project management solutions.</p>
+    </div>
+    <div class="service-item">
+      <h3>Data Entry</h3>
+      <p>Accurately enter and manage your data with our professional data entry services.</p>
+    </div>
+    <div class="service-item">
+      <h3>Issue Research</h3>
+      <p>Thoroughly research and analyze issues to provide comprehensive solutions for your business.</p>
+    </div>
+    <div class="service-item">
+      <h3>Transcription</h3>
+      <p>Efficiently transcribe audio and video files into text format with our transcription services.</p>
+    </div>
+    <div class="service-item">
+      <h3>Event Management</h3>
+      <p>Plan and coordinate successful events with our professional event management services.</p>
+    </div>
+    <div class="service-item">
+      <h3>Travel Planning and Itinerary</h3>
+      <p>Relax and enjoy your travels with our comprehensive travel planning and itinerary services.</p>
+    </div>
   </section>
+  <section class="portfolio" id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-item">
+      <img src="1.png" alt="Portfolio Item 1">
+    </div>
+    <div class="portfolio-item">
+      <img src="2.png" alt="Portfolio Item 2">
+    </div>
+    <div class="portfolio-item">
+      <img src="3.png" alt="Portfolio Item 3">
+      </div>
+    <div class="portfolio-item">
+      <img src="4.png" alt="Portfolio Item 4">
+      </div>
+    <div class="portfolio-item">
+      <img src="5.png" alt="Portfolio Item 5">
+      </div>
+    <div class="portfolio-item">
+      <img src="6.png" alt="Portfolio Item 6">
+      </div>
+    <div class="portfolio-item">
+      <img src="7.png" alt="Portfolio Item 7">
+      </div>
+    <div class="portfolio-item">
+      <img src="8.png" alt="Portfolio Item 8">
+      </div>
+    <div class="portfolio-item">
+      <img src="9.png" alt="Portfolio Item 9">
+      </div>
+    <div class="portfolio-item">
+      <img src="10.png" alt="Portfolio Item 10">
+    </div>
+    </section>
   <section class="about" id="about">
     <h2>About Us</h2>
     <p>NanatheVA is a leading provider of executive virtual assistance services. We are committed to delivering exceptional solutions to our clients, helping them streamline their business operations and achieve their goals.</p>
@@ -195,17 +286,10 @@
   <section class="contact" id="contact">
     <h2>Contact Us</h2>
     <p>Have any questions or inquiries? Feel free to reach out to us!</p>
-     <a href="mailto:daspanvea@gmail.com"><img src="email_icon.png" alt="Email"></a>
-     <a href="https://twitter.com/NanretDaspan"><img src="twitter_icon.png" alt="Twitter"></a>
-     <a href="https://wa.me/2348132807631"><img src="whatsapp_icon.png" alt="Whatsapp"></a>
+    <p>Facebook: Nanret Daspan | Email: daspanvea@gmail.com</p>
   </section>
-  <footer>
+  <footer>  
     <p>&copy; 2024 NanatheVA. All rights reserved.</p>
   </footer>
 </body>
 </html>
-
-     
-
-
-      
