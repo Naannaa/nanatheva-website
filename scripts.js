@@ -1,13 +1,6 @@
-// Open the modal
-function openModal(imageSrc) {
-  var modal = document.getElementById("modal");
-  var modalImg = document.getElementById("modal-content");
-  modal.style.display = "block";
-  modalImg.src = imageSrc;
-}
+const enlargedImage = document.querySelector('.enlarged-image');
+const originalImage = document.getElementById('enlarge-image');
 
-// Close the modal
-function closeModal() {
-  var modal = document.getElementById("modal");
-  modal.style.display = "none";
-}
+originalImage.addEventListener('click', () => {
+  enlargedImage.classList.toggle('active'); // Toggle active class for enlarged image
+});
