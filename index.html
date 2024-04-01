@@ -7,159 +7,205 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
   <style>
     body {
-      font-family: 'Inter', sans-serif; /* Changed font to Inter */
-      background-color: #b4a99a;
-      color: #333;
+      font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      display: flex;
     }
-    .left-panel {
-      width: 200px;
-      background-color: #68696b;
+    header {
+      background-color: #0066cc;
+      color: #fff;
       padding: 20px;
+      text-align: center;
     }
-    .right-panel {
-      flex: 1;
-      padding: 20px;
+    nav {
+      display: inline-block;
     }
-    h1 {
-      color: #0066cc;
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
     }
-    h2 {
-      color: #004080;
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
     }
-    p {
-      line-height: 1.6;
+    nav ul li:last-child {
+      margin-right: 0;
     }
-    .left-panel a {
-      display: block;
+    .cta-button {
+      background-color: #004080;
+      color: #fff;
+      padding: 10px 20px;
       text-decoration: none;
-      color: #333;
-      margin-bottom: 10px;
-      padding: 5px;
       border-radius: 5px;
       transition: background-color 0.3s ease;
     }
-    .left-panel a:hover {
-      background-color: #ddd;
+    .cta-button:hover {
+      background-color: #005cbf;
     }
-    .image-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1px;
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background-image: url('hero_image.jpg');
+      background-size: cover;
+      color: #fff;
+    }
+    .features {
+      padding: 50px 20px;
+      background-color: #f5f5f5;
+    }
+    .feature-item {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .feature-item img {
+      width: 100px;
+      height: auto;
+    }
+    .testimonials {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .testimonial {
+      display: inline-block;
+      width: 30%;
+      margin: 0 15px;
+      text-align: left;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .testimonial img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+      float: left;
+    }
+    .services {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .service-item {
+      display: inline-block;
+      width: 30%;
+      margin: 0 15px;
+      text-align: left;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .about {
+      padding: 50px 20px;
+      background-color: #f5f5f5;
+    }
+    .contact {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #0066cc;
+      color: #fff;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="left-panel">
+  <header>
+    <h1>NanatheVA - Executive Virtual Assistance</h1>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#reviews">Client Reviews</a></li>
-        <li><a href="#tools">Tools</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  </div>
-  <div class="right-panel">
-    <img src="Hi, I’m Nanret Daspan.png" alt="Nanret Daspan" style="max-width: 100%; margin-bottom: 20px;">
-    <div id="about">
-        <h2>About Nanret</h2>
-        <p>Nanret, a diligent Virtual Assistant with over 4 years of experience providing remote and freelance executive virtual assistance. Proven track record of optimizing office operations, managing schedules, and delivering exceptional customer service. Highly skilled in virtual communication, task management, and problem-solving. Seeking to leverage expertise in remote administrative assistance to contribute to a dynamic team.</p>
-      </section>
-      <section class="services-section">
-        <h2>Services We Offer</h2> <!-- Added heading -->
-        <div class="service-columns">
-          <div class="service-column">
-              <h3>Calendar Management</h3>
-            </div>
-            <div class="service-item">
-              <h3>File/Document Management</h3>
-            </div>
-            <div class="service-item">
-              <h3>Project Management</h3>
-            </div>
-            <div class="service-item">
-              <h3>Appointment Setting and Scheduling</h3>
-            </div>
-            <div class="service-item">
-              <h3>Travel Arrangement</h3>
-            </div>
-            <div class="service-item">
-              <h3>Email Management</h3>
-            </div>
-            <div class="service-item">
-              <h3>Meeting Coordination</h3>
-            </div>
-            <div class="service-column">
-              <h3>Bookkeeping</h3>
-            </div>
-            <div class="service-item">
-              <h3>Proofreading and Editing</h3>
-            </div>
-            <div class="service-item">
-              <h3>Video and Audio Transcription</h3>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="portfolio">
-        <h2>Portfolio</h2>
-        <div class="image-gallery">
-          <img src="3.png" alt="Portfolio Image 1" style="width: 400px;"> 
-          <img src="6.png" alt="Portfolio Image 2" style="width: 400px;">
-          <img src="7.png" alt="Portfolio Image 3" style="width: 400px;">
-          <img src="8.png" alt="Portfolio Image 4" style="width: 400px;">
-          <img src="9.png" alt="Portfolio Image 5" style="width: 400px;">
-          <img src="10.png" alt="Portfolio Image 6" style="width: 400px;">
-        </div>
-      </section>
-      <section class="client-reviews">
-        <h2>Client Reviews</h2>
-        <div class="image-gallery">
-          <img src="1.jpg" alt="Client Review 1" style="width: 200px;">
-          <img src="2.jpg" alt="Client Review 2" style="width: 200px;">
-          <img src="3.jpg" alt="Client Review 3" style="width: 200px;">
-          <img src="4.jpg" alt="Client Review 4" style="width: 200px;">
-          <img src="5.jpg" alt="Client Review 5" style="width: 200px;">
-          <img src="6.jpg" alt="Client Review 6" style="width: 200px;">
-          <img src="7.jpg" alt="Client Review 7" style="width: 200px;">
-          <img src="8.jpg" alt="Client Review 8" style="width: 200px;">
-          <img src="9.jpg" alt="Client Review 9" style="width: 200px;">
-          <img src="10.jpg" alt="Client Review 10" style="width: 200px;">
-        </div>
-      </section>
-      <section class="tools-section">
-        <h2>Tools</h2>
-        <div class="image-gallery">
-<img src="airtable.png" alt="Airtable" style="width: 1cm;  height: 1cm;">
-          <img src="asana.png" alt="Asana" style="width: 1cm;  height: 1cm;">
-          <img src="trello.png" alt="Trello" style="width: 1cm;  height: 1cm;">
-          <img src="slack.png" alt="Slack" style="width: 1cm;  height: 1cm;">
-          <img src="canva.png" alt="Canva" style="width: 1cm;  height: 1cm;">
-          <img src="chatgpt.png" alt="ChatGPT" style="width: 1cm;  height: 1cm;">
-          <img src="dropbox.png" alt="Dropbox" style="width: 1cm;  height: 1cm;">
-          <img src="google workspace.jpg" alt="Google Workspace" style="width: 1cm;  height: 1cm;">
-          <img src="instagram.png" alt="Instagram" style="width: 1cm;  height: 1cm;">
-          <img src="linkdin.png" alt="LinkedIn" style="width: 1cm;  height: 1cm;">
-          <img src="ms office.png" alt="MS Office" style="width: 1cm;  height: 1cm;">
-          <img src="skype.png" alt="Skype" style="width: 1cm;  height: 1cm;">
-          <img src="zoom.png" alt="Zoom" style="width: 1cm;  height: 1cm;">
-        </div>
-      </section>
-    </main>
-    <section class="contact-info">
-      <h2>Contact Us</h2>
+    <div>
+      <p>Phone: 123-456-7890 | Email: info@nanatheva.com</p>
+      <a href="#" class="cta-button">Get Started</a>
+    </div>
+  </header>
+  <section class="hero">
+    <h2>Your Trusted Partner for Virtual Assistance Solutions</h2>
+    <p>At NanatheVA, we're dedicated to providing top-notch virtual assistance services tailored to your needs. Explore our website to learn more!</p>
+    <a href="#services" class="cta-button">Discover More</a>
+  </section>
+  <section class="features">
+    <h2>Key Features</h2>
+    <div class="feature-item">
+      <img src="feature_icon1.png" alt="Feature 1">
+      <h3>Efficient Task Management</h3>
+      <p>Stay organized and productive with our efficient task management solutions.</p>
+    </div>
+    <div class="feature-item">
+      <img src="feature_icon2.png" alt="Feature 2">
+      <h3>24/7 Customer Support</h3>
+      <p>Our dedicated team is available round the clock to assist you with any queries or concerns.</p>
+    </div>
+    <div class="feature-item">
+      <img src="feature_icon3.png" alt="Feature 3">
+      <h3>Customized Solutions</h3>
+      <p>We offer personalized solutions tailored to meet your specific business requirements.</p>
+    </div>
+  </section>
+  <section class="testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="testimonial">
+      <img src="testimonial1.jpg" alt="Client 1">
+      <p>"I've been using NanatheVA's services for over a year now, and I'm extremely satisfied with the results. Highly recommended!"</p>
+      <p>- John Doe</p>
+    </div>
+    <div class="testimonial">
+      <img src="testimonial2.jpg" alt="Client 2">
+      <p>"NanatheVA has helped streamline our business operations effectively. Great service and excellent support!"</p>
+      <p>- Jane Smith</p>
+    </div>
+    <div class="testimonial">
+      <img src="testimonial3.jpg" alt="Client 3">
+      <p>"Working with NanatheVA has been a game-changer for our company. Professionalism at its best!"</p>
+      <p>- David Johnson</p>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-item">
+      <h3>Calendar Management</h3>
+      <p>Efficiently manage your schedule and appointments with our calendar management services.</p>
+    </div>
+    <div class="service-item">
+      <h3>Email Management</h3>
+      <p>Keep your inbox organized and respond to emails promptly with our email management solutions.</p>
+    </div>
+    <div class="service-item">
+      <h3>Document Handling</h3>
+      <p>Stay organized and access your important documents anytime, anywhere with our document handling services.</p>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>NanatheVA is a leading provider of executive virtual assistance services. We are committed to delivering exceptional solutions to our clients, helping them streamline their business operations and achieve their goals.</p>
+  </section>
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Have any questions or inquiries? Feel free to reach out to us!</p>
      <a href="mailto:daspanvea@gmail.com"><img src="email_icon.png" alt="Email"></a>
      <a href="https://twitter.com/NanretDaspan"><img src="twitter_icon.png" alt="Twitter"></a>
      <a href="https://wa.me/2348132807631"><img src="whatsapp_icon.png" alt="Whatsapp"></a>
-    </section>
-  </div>
+  </section>
+  <footer>
+    <p>&copy; 2024 NanatheVA. All rights reserved.</p>
+  </footer>
 </body>
 </html>
+
+     
 
 
       
