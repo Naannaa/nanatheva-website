@@ -4,98 +4,168 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NanatheVA - Executive Virtual Assistance</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Your custom styles */
-    body {
-      font-family: 'Montserrat', sans-serif; /* Montserrat font for headings */
-      font-family: 'Charter', sans-serif; /* Charter font for other text */
-      background-color: #314128; /* Main background color */
-      color: #ffffff; /* Text color */
+  <link <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+body {body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #314128; /* Changed background color */
     }
-    .header {
-      background-color: #314128; /* Header background color */
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    header {
+      background-color: #314128;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: inline-block;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    nav ul li:last-child {
+      margin-right: 0;
+    }
+    .cta-button {
+      background-color: #004080;
+      color: #fff;
       padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
     }
-    .header img {
-      width: 400px; /* Logo size */
+    .cta-button:hover {
+      background-color: #005cbf;
     }
     .hero {
-      background-image: url('What is a Virtual Assistant_.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      padding: 100px 0;
       text-align: center;
-      color: #ffffff;
-    }
-    .about {
-      background-color: #FDFFFF; /* About section background color */
       padding: 50px 20px;
+      background-image: url('hero_image.jpg');
+      background-size: cover;
+      color: #fff;
     }
     .features {
-      background-color: #222D52; /* Features section background color */
       padding: 50px 20px;
+      background-color: ##314128;
     }
-    .services {
-      background-color: #EEE5D9; /* Our services section background color */
+    .feature-item {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .feature-item img {
+      width: 100px;
+      height: auto;
+    }
+    .testimonials {
       padding: 50px 20px;
+      text-align: center;
     }
     .testimonial {
-      background-color: #E8E4EO; /* Testimonial section background color */
+      display: inline-block;
+      width: 30%;
+      margin: 0 15px;
+      text-align: left;
+      padding: 20px;
+      background-color: ##314128;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .testimonial img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+      float: left;
+    }
+    .testimonial-flag {
+      width: 20px;
+      height: auto;
+      margin-right: 5px;
+    }
+    .services {
       padding: 50px 20px;
+      text-align: center;
+    }
+    .service-item {
+      display: inline-block;
+      width: 30%;
+      margin: 0 15px;
+      text-align: left;
+      padding: 20px;
+      background-color: #314128;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .about {
+      padding: 50px 20px;
+      background-color: ##314128;
+    }
+    .contact {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: ##314128;
+      color: #fff;
+    }
+    footer {
+      background-color: ##314128;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
     }
     .portfolio {
       padding: 50px 20px;
-    }
-    .cta {
-      background-color: #81a969; /* CTA section background color */
-      padding: 50px 20px;
       text-align: center;
     }
-    .footer {
-      background-color: #314128; /* Footer background color */
-      padding: 20px;
-      text-align: center;
+    .portfolio-item {
+      display: inline-block;
+      margin: 0 15px;
+    }
+    .portfolio-item img {
+      width: 200px; /* Adjusted image size */
+      height: auto;
+    }
+      .header img {
+      width: 150px; /* Adjusted image size */
+      height: auto;
     }
   </style>
 </head>
 <body>
-
-  <!-- Header Section -->
   <header class="header">
-    <div class="logo">
-      <img src="logo.png" alt="NanatheVA Logo" width="150px">
-    </div>
-    <nav class="navigation">
-      <ul>
+    <div class="container">
+      <div class="logo">
+        <img src="White And Black Modern Abstract Beauty Logo.png" alt="NanatheVA Logo">
+      </div>
+      <nav class="navigation">
+        <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#features">Features</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#cta">Let's Work Harder</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <div>
+      <p>Email: daspanvea@gmail.com</p>
+      <a href="https://twitter.com/NanretDaspan" target="_blank"><img src="twitter_icon.png" alt="Twitter" style="width: 20px; height: auto;"></a>
+      <a href="https://www.facebook.com/nanretdaspan" target="_blank"><img src="facebook_icon.png" alt="Facebook" style="width: 20px; height: auto; margin-left: 10px;"></a>
+      <a href="tel:+2348132807631"><img src="whatsapp_icon.png" alt="WhatsApp" style="width: 20px; height: auto; margin-left: 10px;"></a>
+    </div>
   </header>
-
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <h1>Welcome to NanatheVA</h1>
-    <p>Your trusted partner for executive virtual assistance solutions.</p>
+  <section class="hero">
+    <div class="container">
+    <h2>Your Trusted Partner for Virtual Assistance Solutions</h2>
+    <p>At NanatheVA, we're dedicated to providing top-notch virtual assistance services tailored to your needs. Explore our website to learn more!</p>
+    <a href="#services" class="cta-button">Discover More</a>
   </section>
-
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ante vitae purus convallis dictum. Nullam nec libero ac orci ultricies tristique.</p>
-  </section>
-
-  <!-- Features Section -->
-  <section id="features" class="features">
+  <section class="features">
     <h2>Key Features</h2>
     <div class="feature-item">
       <h3>Efficient Task Management</h3>
@@ -109,147 +179,123 @@
       <h3>Customized Solutions</h3>
       <p>We offer personalized solutions tailored to meet your specific business requirements.</p>
     </div>
-    <!-- Add more features as needed -->
   </section>
-
-  <!-- Our Services Section -->
-  <section id="services" class="services">
+  <section class="testimonials">
+  <h2>Client Testimonials</h2>
+  <div class="testimonial">
+      <p>"Nanret is an absolute gem! She goes above and beyond to ensure tasks are completed efficiently and accurately. Her communication skills are exceptional, and she's always proactive in finding solutions. Highly recommend her services!"</p>
+      <cite>- John Smith, London, UK</cite>
+    </div>
+    <div class="testimonial">
+      <p>"Nanret is a lifesaver! Her professionalism and dedication to her work are truly commendable. She handles all tasks promptly and with precision. Couldn't ask for a better virtual assistant. Highly satisfied!"</p>
+      <cite>- Jane Doe, New York City, USA</cite>
+    </div>
+    <div class="testimonial">
+      <p>"I can't thank Nanret enough for her invaluable assistance. She's been instrumental in streamlining processes and keeping things running smoothly. Her proactive approach and quick responses make her a standout virtual assistant. Highly recommended!"</p>
+      <cite>- Kim Min-soo, Seoul, South Korea</cite>
+    </div>
+    <div class="testimonial">
+      <p>"Their expertise saved me time and money. I'm very satisfied with their work."</p>
+      <cite>- David Young, Melbourne, Australia</cite>
+    </div>
+    <div class="testimonial">
+      <p>"Nanret is simply amazing! She's helped me stay organized and on top of my busy schedule. Her attention to detail is impressive, and she always delivers results beyond expectations. I'm grateful to have her as my virtual assistant"</p>
+      <cite>- Sarah Patel, Cape Town, South Africa</cite>
+    </div>
+    <div class="testimonial">
+      <p>"The quality of her work is exceptional. I'm impressed with her attention to detail."</p>
+      <cite>- Li Wang, Beijing, China</cite>
+    </div>
+    <div class="testimonial">
+      <p>"I've had the pleasure of working with Nanret for several months now, and I'm continually impressed by her professionalism and efficiency. She's a proactive problem-solver and an excellent communicator. I highly endorse her services!"</p>
+      <cite>- Michael Chen, Toronto, Canada</cite>
+    </div>
+</section>
+  </section>
+  <section class="services" id="services">
     <h2>Our Services</h2>
-    <div class="slider">
-      <!-- Slide 1 -->
-      <div class="slide">
-        <div class="service-item">Event Management</div>
-        <div class="service-item">Travel Planning and Itinerary</div>
-        <div class="service-item">Calendar Management</div>
-        <div class="service-item">Email Management</div>
-      </div>
-      <!-- Slide 2 -->
-      <div class="slide">
-        <div class="service-item">Project Management</div>
-        <div class="service-item">Data Entry</div>
-        <div class="service-item">Issue Research</div>
-        <div class="service-item">Transcription</div>
-      </div>
-      <!-- Add more slides as needed -->
+    <div class="service-item">
+      <h3>Calendar Management</h3>
+      <p>Efficiently manage your schedule and appointments with our calendar management services.</p>
+    </div>
+    <div class="service-item">
+      <h3>Email Management</h3>
+      <p>Keep your inbox organized and respond to emails promptly with our email management solutions.</p>
+    </div>
+    <div class="service-item">
+      <h3>Document Handling</h3>
+      <p>Stay organized and access your important documents anytime, anywhere with our document handling services.</p>
+    </div>
+    <div class="service-item">
+      <h3>Project Management</h3>
+      <p>Stay on top of your projects and ensure timely delivery with our project management solutions.</p>
+    </div>
+    <div class="service-item">
+      <h3>Data Entry</h3>
+      <p>Accurately enter and manage your data with our professional data entry services.</p>
+    </div>
+    <div class="service-item">
+      <h3>Issue Research</h3>
+      <p>Thoroughly research and analyze issues to provide comprehensive solutions for your business.</p>
+    </div>
+    <div class="service-item">
+      <h3>Transcription</h3>
+      <p>Efficiently transcribe audio and video files into text format with our transcription services.</p>
+    </div>
+    <div class="service-item">
+      <h3>Event Management</h3>
+      <p>Plan and coordinate successful events with our professional event management services.</p>
+    </div>
+    <div class="service-item">
+      <h3>Travel Planning and Itinerary</h3>
+      <p>Relax and enjoy your travels with our comprehensive travel planning and itinerary services.</p>
     </div>
   </section>
-
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="testimonial">
-    <h2>Client Testimonials</h2>
-    <div class="slider">
-      <!-- Slide 1 -->
-      <div class="slide">
-        <div class="testimonial-item">
-          <p>"Nanret is an absolute gem! She goes above and beyond to ensure tasks are completed efficiently and accurately. Her communication skills are exceptional, and she's always proactive in finding solutions. Highly recommend her services!"</p>
-          <cite>- John Smith, London, UK</cite>
-        </div>
-        <div class="testimonial-item">
-          <p>"Nanret is a lifesaver! Her professionalism and dedication to her work are truly commendable. She handles all tasks promptly and with precision. Couldn't ask for a better virtual assistant. Highly satisfied!"</p>
-          <cite>- Jane Doe, New York City, USA</cite>
-        </div>
-      </div>
-      <!-- Slide 2 -->
-      <div class="slide">
-        <div class="testimonial-item">
-          <p>"I can't thank Nanret enough for her invaluable assistance. She's been instrumental in streamlining processes and keeping things running smoothly. Her proactive approach and quick responses make her a standout virtual assistant. Highly recommended!"</p>
-          <cite>- Kim Min-soo, Seoul, South Korea</cite>
-        </div>
-        <div class="testimonial-item">
-          <p>"Their expertise saved me time and money. I'm very satisfied with their work."</p>
-          <cite>- David Young, Melbourne, Australia</cite>
-        </div>
-      </div>
-      <!-- Slide 3 -->
-      <div class="slide">
-        <div class="testimonial-item">
-          <p>"Nanret is simply amazing! She's helped me stay organized and on top of my busy schedule. Her attention to detail is impressive, and she always delivers results beyond expectations. I'm grateful to have her as my virtual assistant"</p>
-          <cite>- Sarah Patel, Cape Town, South Africa</cite>
-        </div>
-        <div class="testimonial-item">
-          <p>"The quality of her work is exceptional. I'm impressed with her attention to detail."</p>
-          <cite>- Li Wang, Beijing, China</cite>
-        </div>
-      </div>
-      <!-- Slide 4 -->
-      <div class="slide">
-        <div class="testimonial-item">
-          <p>"I've had the pleasure of working with Nanret for several months now, and I'm continually impressed by her professionalism and efficiency. She's a proactive problem-solver and an excellent communicator. I highly endorse her services!"</p>
-          <cite>- Michael Chen, Toronto, Canada</cite>
-        </div>
-        <!-- Add more testimonials as needed -->
-      </div>
-      <!-- Add more slides as needed -->
-    </div>
-  </section>
-
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="portfolio">
+  <section class="portfolio" id="portfolio">
     <h2>Portfolio</h2>
     <div class="portfolio-item">
-      <img src="1.png" alt="Portfolio Item 1" width="200px">
+      <img src="1.png" alt="Portfolio Item 1">
     </div>
     <div class="portfolio-item">
-      <img src="2.png" alt="Portfolio Item 2" width="200px">
+      <img src="2.png" alt="Portfolio Item 2">
     </div>
     <div class="portfolio-item">
-      <img src="3.png" alt="Portfolio Item 3" width="200px">
-    </div>
+      <img src="3.png" alt="Portfolio Item 3">
+      </div>
     <div class="portfolio-item">
-      <img src="4.png" alt="Portfolio Item 3" width="200px">
-    </div>
+      <img src="4.png" alt="Portfolio Item 4">
+      </div>
     <div class="portfolio-item">
-      <img src="5.png" alt="Portfolio Item 3" width="200px">
-    </div>
+      <img src="5.png" alt="Portfolio Item 5">
+      </div>
     <div class="portfolio-item">
-      <img src="6.png" alt="Portfolio Item 3" width="200px">
-    </div>
-   <div class="portfolio-item">
-      <img src="7.png" alt="Portfolio Item 3" width="200px">
-    </div>
-          <div class="portfolio-item">
-      <img src="8.png" alt="Portfolio Item 3" width="200px">
-    </div>
+      <img src="6.png" alt="Portfolio Item 6">
+      </div>
     <div class="portfolio-item">
-      <img src="9.png" alt="Portfolio Item 3" width="200px">
+      <img src="7.png" alt="Portfolio Item 7">
+      </div>
+    <div class="portfolio-item">
+      <img src="8.png" alt="Portfolio Item 8">
+      </div>
+    <div class="portfolio-item">
+      <img src="9.png" alt="Portfolio Item 9">
+      </div>
+    <div class="portfolio-item">
+      <img src="10.png" alt="Portfolio Item 10">
     </div>
-     <div class="portfolio-item">
-      <img src="10.png" alt="Portfolio Item 3" width="200px">
-    </div>
-    <!-- Add more portfolio items as needed -->
+    </section>
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>NanatheVA is a leading provider of executive virtual assistance services. We are committed to delivering exceptional solutions to our clients, helping them streamline their business operations and achieve their goals.</p>
   </section>
-
-  <!-- Let's Work Harder Section -->
-  <section id="cta" class="cta">
-    <h2>Let's Work Harder, Not Smarter</h2>
-    <div class="points">
-      <div class="point">Save Time</div>
-      <div class="point">Stay Organized</div>
-      <div class="point">Drive Revenue</div>
-    </div>
-  </section>
-
-  <!-- Contact Us Section -->
-  <section id="contact" class="contact">
+  <section class="contact" id="contact" tyle="background-color: #6b564d; color: #FFFFFF;">
     <h2>Contact Us</h2>
-    <p>Email: daspanvea@gmail.com</p>
-    <a href="https://twitter.com/NanretDaspan" target="_blank"><img src="twitter_icon.png" alt="Twitter" width="20px" height="auto"></a>
-    <a href="https://www.facebook.com/nanretdaspan" target="_blank"><img src="facebook_icon.png" alt="Facebook" width="20px" height="auto" style="margin-left: 10px;"></a>
+    <p>Have any questions or inquiries? Feel free to reach out to us!</p>
+    <p>Facebook: Nanret Daspan | Email: daspanvea@gmail.com</p>
   </section>
-
-  <!-- Footer Section -->
-  <footer class="footer">
-    <nav class="footer-menu">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#cta">Let's Work Harder</a></li>
-      </ul>
-    </nav>
+  <footer class="footer" style="background-image: url('Trustworthy Domestic Staffing Solutions from The Assistant Company.jpg');">
+    <div class="container">
+    <p>&copy; 2024 NanatheVA. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
